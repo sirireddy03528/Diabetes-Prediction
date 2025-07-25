@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">Diabetes Predictor</div>
+    <div class="nav-right">  
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contactus.html">ContactUs</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    </div>
+
+  </nav>
+
+  <div class="contact-container">
+    <h2>Get in touch!</h2>
+    <form class="contact-form" onsubmit="return contactSubmit()">
+      <label for="cname">Name</label>
+      <input type="text" id="cname" placeholder="Your Name" required />
+
+      <label for="cemail">Email</label>
+      <input type="email" id="cemail" placeholder="Your Email" required />
+
+      <label for="cmsg">Message</label>
+      <textarea id="cmsg" placeholder="Your Message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function contactSubmit() {
+      alert("Message submitted!,Thank You");
+      return false;
+    }
+  </script>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Contact Us</h3>
+        <p>Hyderabad<br>Telangana, India</p>
+        <a href="mailto:queries@diabetespredictor.com">queries@diabetespredictor.com</a>
+
+      </div>
+      <div class="footer-right">
+        <h3>Social Links</h3>
+        <p><a href="https://facebook.com/diabetespredictor" target="_blank">facebook.com/diabetespredictor</a></p>
+        <p><a href="https://google.com/diabetespredictor" target="_blank">google.com/diabetespredictor</a></p>
+        <p><a href="https://linkedin.com/diabetespredictor" target="_blank">linkedin.com/diabetespredictor</a></p>
+        <p><a href="https://twitter.com/diabetespredictor" target="_blank">twiiter.com/diabetespredictor</a></p>
+
+      </div>
+    </div>
+    <hr>
+    <p class="footer-copy">Copyright © 2025</p>
+  </footer>
+  
+</body>
+</html>
